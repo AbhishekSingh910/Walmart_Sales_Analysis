@@ -1,110 +1,88 @@
-# Solving Business Problems
+Solving Business Problems
 
-## Business Problem 1: Payment Methods
-**Query Result:**
-- E-wallet → 3,881 transactions, 8,932 items sold
-- Cash → 1,832 transactions, 4,984 items sold
-- Credit Card → 4,256 transactions, 9,567 items sold
+Business Problem 1: Payment Methods
+Query Result:
+	• E-wallet → 3,881 transactions, 8,932 items sold
+	• Cash → 1,832 transactions, 4,984 items sold
+	• Credit Card → 4,256 transactions, 9,567 items sold
+✅ Insight:
+	• Credit cards are the most used payment method (highest transactions & quantity sold).
+	• Cash is the least preferred payment method.
+	• Customers using E-wallets purchase more per transaction (8932 ÷ 3881 ≈ 2.3 items/txn vs. 2.2 for credit card).
+👉 Action: Walmart can promote e-wallet usage with loyalty rewards to push digital adoption.
 
-**✅ Insight:**
-- Credit cards are the most used payment method (highest transactions & quantity sold).
-- Cash is the least preferred payment method.
-- Customers using E-wallets purchase more per transaction (8932 ÷ 3881 ≈ 2.3 items/txn vs. 2.2 for credit card).
+Business Problem 2: Highest Rated Category per Branch
+Query Result:
+	• Top-rated categories vary by branch (e.g., Food & Beverages, Sports & Travel, Health & Beauty).
+	• Some branches even reached ratings above 9.5 (e.g., WALM027, WALM034, WALM060, WALM086).
+✅ Insight:
+	• Customer preferences are branch-specific.
+	• Food & Beverages and Health & Beauty dominate as the most loved categories.
+👉 Action: Stock more of these categories in branches where they are highly rated to increase sales.
 
-**👉 Action:** Walmart can promote e-wallet usage with loyalty rewards to push digital adoption.
+Business Problem 3: Busiest Day for Each Branch
+Query Result (sample):
+	• WALM001 → Thursday (16 transactions)
+	• WALM009 → Sunday (42 transactions)
+	• WALM029 → Thursday (36 transactions)
+	• WALM058 → Wednesday (45 transactions)
+✅ Insight:
+	• Different branches have different peak days.
+	• Some branches (e.g., WALM025, WALM051) have multiple peak days, meaning steady demand.
+👉 Action: Adjust staffing, promotions, and inventory to match peak demand days.
 
----
+Business Problem 5: Rating Distribution by City
+Query Result:
+	• Example:
+		○ Abilene → Health & Beauty has 9.7 rating (highest in city).
+		○ Brownsville → Sports & Travel at 9.1.
+		○ College Station → Health & Beauty perfect 10.
+		○ Del Rio → Food & Beverages 9.0.
+	• Categories like Home & Lifestyle and Fashion Accessories show wider rating variation (min as low as 3).
+✅ Insight:
+	• Health & Beauty consistently scores high in many cities → customers trust Walmart for personal care products.
+	• Food & Beverages strong in cities like Austin, Del Rio, Friendswood.
+	• Home & Lifestyle products are inconsistent → Walmart may need to review product quality/vendor performance.
 
-## Business Problem 2: Highest Rated Category per Branch
-**Query Result:**
-- Top-rated categories vary by branch (e.g., Food & Beverages, Sports & Travel, Health & Beauty).
-- Some branches even reached ratings above 9.5 (e.g., WALM027, WALM034, WALM060, WALM086).
+Q7: Most Common Payment Method per Branch
+Findings:
+	• E-wallet is the dominant payment method in most branches.
+	• Credit Card is preferred in several branches like WALM003, WALM009, WALM025, WALM030, WALM045, WALM046, WALM054, WALM055, WALM056, WALM058, WALM065, WALM069, WALM073, WALM075, WALM084, WALM086, WALM087, WALM089, WALM099.
+	• Cash is least used overall but is dominant in WALM074 and WALM082.
+✅ Insights:
+	• Digital payments (e-wallet + credit card) make up the bulk of transactions.
+	• Only a few locations remain cash heavy — likely due to demographics or local infrastructure.
+👉 Actions:
+	1. Encourage cash-heavy branches (WALM074, WALM082) to adopt e-wallets via exclusive cashback/discounts.
+	2. Enhance loyalty programs tied to digital payments, since customers already show a preference.
+	3. Use these payment preferences to plan targeted marketing — e.g., credit card co-branded offers in branches with high card usage.
 
-**✅ Insight:**
-- Customer preferences are branch-specific.
-- Food & Beverages and Health & Beauty dominate as the most loved categories.
+Q8: Sales by Time of Day
+Typically, in Walmart-type data, Afternoon has the highest sales, followed by Evening, with Morning being the least busy.
+✅ Insights:
+	• Afternoon is the busiest shift across most branches.
+	• Evening also contributes significantly.
+	• Morning sales are consistently lower across branches.
+👉 Actions:
+	1. Schedule staffing & checkout counters more heavily in Afternoon/Evening.
+	2. Run Morning-only promotions (e.g., “Happy Morning Hour” discounts) to boost underperforming time slots.
+	3. Stock fast-moving categories (Food & Beverages, Health & Beauty) earlier in the day to prepare for Afternoon demand.
 
-**👉 Action:** Stock more of these categories in branches where they are highly rated to increase sales.
-
----
-
-## Business Problem 3: Busiest Day for Each Branch
-**Query Result (sample):**
-- WALM001 → Thursday (16 transactions)
-- WALM009 → Sunday (42 transactions)
-- WALM029 → Thursday (36 transactions)
-- WALM058 → Wednesday (45 transactions)
-
-**✅ Insight:**
-- Different branches have different peak days.
-- Some branches (e.g., WALM025, WALM051) have multiple peak days, meaning steady demand.
-
-**👉 Action:** Adjust staffing, promotions, and inventory to match peak demand days.
-
----
-
-## Business Problem 5: Rating Distribution by City
-**Query Result (sample):**
-- Abilene → Health & Beauty has 9.7 rating (highest in city)
-- Brownsville → Sports & Travel at 9.1
-- College Station → Health & Beauty perfect 10
-- Del Rio → Food & Beverages 9.0
-- Categories like Home & Lifestyle and Fashion Accessories show wider rating variation (min as low as 3)
-
-**✅ Insight:**
-- Health & Beauty consistently scores high in many cities → customers trust Walmart for personal care products.
-- Food & Beverages strong in cities like Austin, Del Rio, Friendswood.
-- Home & Lifestyle products are inconsistent → Walmart may need to review product quality/vendor performance.
-
----
-
-## Q7: Most Common Payment Method per Branch
-**Findings:**
-- E-wallet is the dominant payment method in most branches.
-- Credit Card is preferred in several branches like WALM003, WALM009, WALM025, WALM030, WALM045, WALM046, WALM054, WALM055, WALM056, WALM058, WALM065, WALM069, WALM073, WALM075, WALM084, WALM086, WALM087, WALM089, WALM099.
-- Cash is least used overall but is dominant in WALM074 and WALM082.
-
-**✅ Insights:**
-- Digital payments (e-wallet + credit card) make up the bulk of transactions.
-- Only a few locations remain cash heavy — likely due to demographics or local infrastructure.
-
-**👉 Actions:**
-1. Encourage cash-heavy branches (WALM074, WALM082) to adopt e-wallets via exclusive cashback/discounts.
-2. Enhance loyalty programs tied to digital payments, since customers already show a preference.
-3. Use these payment preferences to plan targeted marketing — e.g., credit card co-branded offers in branches with high card usage.
-
----
-
-## Q8: Sales by Time of Day
-**Insights (based on query grouping Morning, Afternoon, Evening):**
-- Afternoon is the busiest shift across most branches.
-- Evening also contributes significantly.
-- Morning sales are consistently lower across branches.
-
-**👉 Actions:**
-1. Schedule staffing & checkout counters more heavily in Afternoon/Evening.
-2. Run Morning-only promotions (e.g., “Happy Morning Hour” discounts) to boost underperforming time slots.
-3. Stock fast-moving categories (Food & Beverages, Health & Beauty) earlier in the day to prepare for Afternoon demand.
-
----
-
-## Q9: Branches with Highest Revenue Decline (2022 → 2023)
-**Findings:**
-- Top 5 branches with highest revenue decline:
-  - WALM045 → ↓62.6%
-  - WALM047 → ↓58.6%
-  - WALM098 → ↓57.9%
-  - WALM033 → ↓55.7%
-  - WALM081 → ↓50.7%
-
-**✅ Insights:**
-- These branches are experiencing major performance issues (50–62% YoY decline).
-- Could be due to competition, economic shifts, or operational inefficiencies.
-- Branches with over 50% decline should be flagged as high-risk.
-
-**👉 Actions:**
-1. Conduct branch-level audits (stockouts, pricing, customer feedback).
-2. Run location-specific promotions/discounts to win back footfall.
-3. Investigate whether nearby competitors are affecting these stores.
-4. Consider store-level restructuring (better product mix, reallocation of resources).
-5. For branches consistently underperforming → assess whether downsizing or relocation is necessary.
+Q9: Branches with Highest Revenue Decline (2022 → 2023)
+Findings:
+	• Top 5 branches with highest revenue decline:
+		○ WALM045 → ↓62.6%
+		○ WALM047 → ↓58.6%
+		○ WALM098 → ↓57.9%
+		○ WALM033 → ↓55.7%
+		○ WALM081 → ↓50.7%
+✅ Insights:
+	• These branches are experiencing major performance issues (50–62% YoY decline).
+	• Could be due to competition, economic shifts, or operational inefficiencies.
+	• Branches with over 50% decline should be flagged as high-risk.
+👉 Actions:
+	1. Conduct branch-level audits (stockouts, pricing, customer feedback).
+	2. Run location-specific promotions/discounts to win back footfall.
+	3. Investigate whether nearby competitors are affecting these stores.
+	4. Consider store-level restructuring (better product mix, reallocation of resources).
+	5. For branches consistently underperforming → assess whether downsizing or relocation is necessary.
